@@ -1,6 +1,12 @@
+var bandera = false;
 function validar(){
-    alert($("#user").val())
+    if(bandera){
+        console.log("validacion completa");
+        //redireccionar a pagina correspondiente
+    }
 
-    // var user = document.getElementById("user");
-    //alert(user.value);
+}
+function correctCaptcha(){
+    console.log("Captcha resuelto correctamente");
+    bandera = true;
 }
